@@ -7,8 +7,7 @@ sky:
     username: root
     password: Gongyusong666
 
-aliyun:
-  oss:
+  alioss:
     endpoint: https://oss-cn-beijing.aliyuncs.com
     bucketName: darkside
     region: cn-beijing
