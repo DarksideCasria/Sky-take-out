@@ -57,4 +57,26 @@
 
 
 
+
+    <select id="getByCategoryId" resultType="com.sky.entity.Dish">
+        select * from dish d
+        <where>
+            <if test="name != null">
+                and d.name like concat('%',#{name},'%')
+            </if>
+            <if test="categoryId!=null">
+                and d.category_id=#{categoryId}
+            </if>
+            <if test="status!=null">
+                and d.status=#{status}
+            </if>
+        </where>
+    </select>
+
+
+    <select id="getBySetmealId" resultType="com.sky.entity.Dish">
+        select d.* from dish d left join setmeal_dish s on d.id=s.dish_id where s.setmeal_id=#{id}
+    </select>
+
+
 </mapper>
