@@ -17,3 +17,7 @@ sky:
     port: 6379
     password: Gongyusong666
     database: 10
+
+  wechat:
+    appid: wxf59fd8fa5b309838
+    secret: f7a6f11213f00638b707917d5be05216
